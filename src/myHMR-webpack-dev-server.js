@@ -2,7 +2,7 @@
 
 const webpack = require('webpack')
 const Server = require('./lib/server/Server')
-const config = require('~/webpack.config')
+const config = require('../webpack.config')
 
 // 1. 创建webpack 实例
 const comiler = webpack(config)

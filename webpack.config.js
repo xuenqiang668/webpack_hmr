@@ -4,14 +4,8 @@ const { HotModuleReplacementPlugin } = require('webpack')
 
 module.exports = {
   mode: 'development',
-  entry: {
-    main: path.resolve(__dirname, './src/index.js'),
-  },
-  resolve: {
-    alias: {
-      '~': path.resolve(__dirname, ''),
-    },
-  },
+  // 目前实现这种
+  entry: path.resolve(__dirname, './src/index.js'),
   output: {
     path: path.resolve(__dirname, 'build'),
     filename: '[name].hash.js',
